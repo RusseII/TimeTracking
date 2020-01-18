@@ -3,9 +3,9 @@
 
 
 ## There are three parts to this project.
-### Part 1. Javascript for automation (JXA) script that gets data from TimingApp & sends the data to our server.
-### Part 2. A lambda function that stores the timingapp data.
-### Part 3. A lambda function that generates reports and sends them into telegram. 
+Part 1. Javascript for automation (JXA) script that gets data from TimingApp & sends the data to our server.
+Part 2. A lambda function that stores the timingapp data.
+Part 3. A lambda function that generates reports and sends them into telegram. 
 
 
 
