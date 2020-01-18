@@ -2,16 +2,18 @@
 
 
 
-# There are three parts to this project.
-## Part 1. Javascript for automation (JXA) script that gets data from TimingApp & sends the data to our server.
-## Part 2. A lambda function that stores the timingapp data.
-## Part 3. A lambda function that generates reports and sends them into telegram. 
-
-
-
+## There are three parts to this project.
 ### Part 1. Javascript for automation (JXA) script that gets data from TimingApp & sends the data to our server.
+### Part 2. A lambda function that stores the timingapp data.
+### Part 3. A lambda function that generates reports and sends them into telegram. 
 
-Automatically export timingapp data and send it 
+
+
+## Part 1. Javascript for automation (JXA) script that gets data from TimingApp & sends the data to our server.
+
+Automatically export timingapp data and send it to the lambda function. This needs to run at least daily, accounting for network connections, mac sleeping, etc. 
+
+The most likely approach to this will be sending the data mutliple times per day, but only using the most recent day-data when doing the reports and calculations. 
 
 
 
@@ -66,3 +68,4 @@ We need to store that data in our database whenever we recieve an api call.
 
 
 ## Part 3. A lambda function that generates reports and sends them into telegram. 
+In the first release, this can just run daily, and grab the most recent report data from the database, and send it in our telegram group via the telegram bot.
