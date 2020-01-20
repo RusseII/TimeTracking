@@ -17,7 +17,7 @@ async function connectToDatabase() {
 
   const connection = await MongoClient.connect(uri);
   console.log('=> creating a new connection');
-  cachedDb = connection.db('content');
+  cachedDb = connection.db('russell_work');
   return Promise.resolve(cachedDb);
 }
 
@@ -49,5 +49,3 @@ const storeData = async (event, context, callback) => {
 };
 
 module.exports.handler = storeData;
-
-// executeMongo({body: {city: 'Hammondsville', state: "Ohio"}}, {}, {})
